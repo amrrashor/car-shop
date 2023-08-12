@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { CarProps } from '@/types';
+import { generateCarImage } from '@/utils';
 
 
 interface carDetailsProps {
@@ -59,7 +60,7 @@ const CarDetails = ({ isOpen, closeModal, car }: carDetailsProps) => {
                   <div className='flex flex-1 flex-col gap-3'>
                     <div className='relative w-full h-40 bg-pattern rounded-lg bg-cover bg-center'>
                       <Image
-                        src='/hero.png'
+                        src={generateCarImage(car)}
                         alt='preview'
                         fill
                         priority
@@ -70,7 +71,7 @@ const CarDetails = ({ isOpen, closeModal, car }: carDetailsProps) => {
                     <div className='flex gap-3'>
                       <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
                         <Image
-                          src='/hero.png'
+                          src={generateCarImage(car, '29')}
                           alt='preview'
                           fill
                           priority
@@ -80,7 +81,7 @@ const CarDetails = ({ isOpen, closeModal, car }: carDetailsProps) => {
 
                       <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
                         <Image
-                          src='/hero.png'
+                          src={generateCarImage(car, '33')}
                           alt='preview'
                           fill
                           priority
@@ -90,7 +91,7 @@ const CarDetails = ({ isOpen, closeModal, car }: carDetailsProps) => {
 
                       <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
                         <Image
-                          src='/hero.png'
+                          src={generateCarImage(car, '13')}
                           alt='preview'
                           fill
                           priority
