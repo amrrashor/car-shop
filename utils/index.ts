@@ -14,7 +14,7 @@ export async function fetchCars(filters: FilterProps) {
     return result;
 }
 
-
+//THE FUNCTION THAT CALUCULATES THE RENT
 export const calculateCarRent = (city_mpg: number, year: number) => {
   const basePricePerDay = 50; // Base rental price per day in dollars
   const mileageFactor = 0.1; // Additional rate per mile driven
@@ -29,7 +29,6 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 
   return rentalRatePerDay.toFixed(0);
 };
-
 
 //THE FUNCTION THAT FETCHES THE CAR IMAGES
 export const generateCarImage = (car: CarProps, angle?: string) => {
@@ -46,4 +45,12 @@ export const generateCarImage = (car: CarProps, angle?: string) => {
   return `${url}`;
 }
 
+//THE FUNCTION THAT FETCHS THE NEW PATH NAME
+export const updateSearchParams = (type:string, value:string) => {
+  const searchParams = new URLSearchParams(window.location.search);
 
+  searchParams.set(type, value);
+  const newPathname = `${window.location.pathname}?${searchParams.toString()}`
+
+  return newPathname;
+}
