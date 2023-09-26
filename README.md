@@ -1,34 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Shop Project (For Skill Showcase)
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+1. Introduction
+2. Project Overview
+3. Technologies Used
+4. Folder Structure
+5. Getting Started
+6. Project Setup
+7. Usage
+8. Contributing
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## 1. Introduction
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Welcome to the documentation for the "Car Shop" project! This project is created solely for showcasing specific technologies and languages. This document provides an overview of the project, its technologies, folder structure, and instructions on how to get started and use the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 2. Project Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The "Car Shop" project is a web application built using Next.js, a popular React framework for building server-rendered applications. This project is designed to showcase a car dealership website, where users can browse and view details about various car models.
 
-## Learn More
+## 3. Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+The following technologies and tools are used in this project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js: A React framework for server-rendered applications.
+- React: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for styling the application.
+- TypeScript: A statically-typed superset of JavaScript.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Dependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project relies on various dependencies specified in the `package.json` file.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 4. Folder Structure
+
+The project follows a structured folder hierarchy to organize code and assets efficiently. Here's an overview of the project's folder structure:
+
+- **app**: This folder contains the main application logic and components.
+- **components**: Reusable React components used throughout the application.
+- **constants**: Constants and configuration files used in the project.
+- **public**: Publicly accessible files, such as images and fonts.
+- **types**: TypeScript type definitions.
+- **utils**: Utility functions and helper scripts.
+
+## 5. Getting Started
+
+To get started with the "Car Shop" project, follow the steps below:
+
+## 6. Project Setup
+
+1. Clone the repository from GitHub.
+
+2. Change into the project directory.
+
+3. Install the project dependencies.
+
+## 7. Usage
+
+Once the project is set up, you can use the following npm scripts to develop and run the application:
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the production-ready application.
+- `npm run start`: Starts the production server.
+- `npm run lint`: Runs linting checks on the project.
+
+## 8. Contributing
+
+We welcome contributions from the community. If you'd like to contribute to the project, please follow these steps:
+
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear and concise commit messages.
+4. Push your changes to your fork.
+5. Create a pull request to the main repository.
+
+
+---
+
+Thank you for using the "Car Shop" project! If you have any questions or need further assistance, please don't hesitate to reach out to me. Happy coding!
